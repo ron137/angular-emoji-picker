@@ -75,6 +75,12 @@ angular.module('vkEmojiPicker').provider('$emojiPopover', function () {
                 left: 24
               };
               break;
+            case 'top-left':
+              offset = {
+                top: position.top - popoverHeight - position.height * 3,
+                right: 0
+              };
+              break;
             case 'top':
             default:
               offset = {
